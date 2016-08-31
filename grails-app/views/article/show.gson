@@ -1,0 +1,7 @@
+import grails.example.Article
+
+model {
+    Article article
+}
+
+json jsonapi.render(article)

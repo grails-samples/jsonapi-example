@@ -2,7 +2,7 @@ package grails.example
 
 import grails.rest.Resource
 
-@Resource
+@Resource(uri='/articles')
 class Article {
     String title
     People author
