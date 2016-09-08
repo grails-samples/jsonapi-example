@@ -4,4 +4,4 @@ model {
     Person person
 }
 
-json tmpl.person(person)
+json jsonapi.render(person)
