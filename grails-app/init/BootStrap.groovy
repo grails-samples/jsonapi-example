@@ -1,10 +1,10 @@
 import grails.example.Article
-import grails.example.People
+import grails.example.Person
 
 class BootStrap {
 
     def init = { servletContext ->
-        def gump = new People(name: "Mr. Gump")
+        def gump = new Person(name: "Mr. Gump")
         gump.save(failOnError:true)
         def article = new Article(
             author: gump,

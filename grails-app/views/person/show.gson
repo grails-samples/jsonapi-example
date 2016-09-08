@@ -1,0 +1,7 @@
+import grails.example.Person
+
+model {
+    Person person
+}
+
+json jsonapi.render(person)
