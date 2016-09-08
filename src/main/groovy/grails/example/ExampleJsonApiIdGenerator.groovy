@@ -5,6 +5,14 @@ import grails.plugin.json.view.api.internal.JsonApiIdGenerator
 class ExampleJsonApiIdGenerator implements JsonApiIdGenerator {
     @Override
     String generateId(Object object) {
-        return "example-${object.id}"
+        generateIdForType object
+    }
+
+    protected String generateIdForType(object) {
+        "default-id-${object.id}"
+    }
+
+    protected String generateIdForType(Article article) {
+        "custom-article-id-${article.id}"
     }
 }
