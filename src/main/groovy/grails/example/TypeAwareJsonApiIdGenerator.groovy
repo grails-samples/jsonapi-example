@@ -19,7 +19,7 @@ class TypeAwareJsonApiIdGenerator extends DefaultJsonApiIdGenerator {
         }
     }
 
-    public boolean supports(Class clazz) {
+    boolean supports(Class clazz) {
         return supportedClasses.contains(clazz)
     }
 }
