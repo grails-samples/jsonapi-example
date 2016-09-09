@@ -1,6 +1,6 @@
 package grails.example
 
-import grails.plugin.json.view.api.internal.JsonApiIdGenerator
+import grails.plugin.json.view.api.jsonapi.JsonApiIdGenerator
 
 class ExampleJsonApiIdGenerator implements JsonApiIdGenerator {
     @Override
