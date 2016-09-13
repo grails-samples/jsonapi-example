@@ -8,5 +8,6 @@ class Article {
     Person author
 
     static constraints = {
+        title(nullable: false, blank: false)
     }
 }
