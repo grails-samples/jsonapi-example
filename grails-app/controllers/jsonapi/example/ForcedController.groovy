@@ -11,4 +11,8 @@ class ForcedController {
 
         render(view: '/article/show', model: [article: article])
     }
+
+    def serverError() {
+        throw new RuntimeException("Example RuntimeError")
+    }
 }
