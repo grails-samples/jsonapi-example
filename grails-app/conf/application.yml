@@ -38,17 +38,19 @@ grails:
               - text/json   
             hal:
               - application/hal+json
-              - application/hal+xml  
+              - application/hal+xml
+            jsonapi:
+              - application/vnd.api+json
             xml:
               - text/xml
-              - application/xml                                 
+              - application/xml
             atom: application/atom+xml
             css: text/css
             csv: text/csv
             js: text/javascript
             rss: application/rss+xml
             text: text/plain
-            all: '*/*'            
+            all: '*/*'
     urlmapping:
         cache:
             maxsize: 1000
