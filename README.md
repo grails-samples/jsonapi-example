@@ -5,6 +5,7 @@ Example  Application for demoing jsonapi support within grails-views using the `
 
 ## Demo
 * run the app: `./gradlew bootRun` or `grails run-app`
-* `curl -i -H "Accept: application/json" http://localhost:8080/people/1`
-* `curl -i -H "Accept: application/json" http://localhost:8080/articles/1`
-* error example: `curl -i -H "Accept: application/json" http://localhost:8080/forced/validationError`
+* `curl -i -H "Accept: application/vnd.api+json" http://localhost:8080/people/1.json`
+* `curl -i -H "Accept: application/vnd.api+json" http://localhost:8080/articles/1.json`
+* Validation Error: `curl -i -H "Accept: application/vnd.api+json" http://localhost:8080/forced/validationError`
+* 500 Error: `curl -i -H "Accept: application/vnd.api+json" http://localhost:8080/forced/serverError`
