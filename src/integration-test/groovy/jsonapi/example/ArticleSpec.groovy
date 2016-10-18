@@ -42,7 +42,7 @@ class ArticleSpec extends Specification {
             contentType.type == 'application'
 
         and: 'the links are present'
-            resp.json.links.self == "/articles?id=1"
-            resp.json.links.related.href == "/people?id=1"
+            resp.json.links.self == "/articles/1"
+            resp.json.links.related.href == "/people/1"
     }
 }

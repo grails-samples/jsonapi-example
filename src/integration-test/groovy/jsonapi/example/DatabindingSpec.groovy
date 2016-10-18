@@ -49,11 +49,10 @@ class DatabindingSpec extends Specification {
             resp.json.data.relationships.author.data.id == '1'
             resp.json.data.relationships.author.data.type == 'person'
             resp.json.data.attributes.title == 'Foo'
-            resp.json.data.attributes.version == 0
             resp.json.data.id == '3'
             resp.json.data.type == 'article'
-            resp.json.links.related.href == '/person/index/1'
-            resp.json.links.self == '/article/index/3'
+            resp.json.links.related.href == '/people/1'
+            resp.json.links.self == '/articles/3'
     }
 
     RestBuilder restBuilder() {
